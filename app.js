@@ -16,13 +16,14 @@ function errorHandling(error) {
 }
 
 function clickResult() {
-    const txtInput = inputText.value
+    const txtInput = inputText.value // input
 
+    // Processing by calling server
     fetch(fetchTranlationApi(txtInput))
     .then(response => response.json())
     .then(json => {
         let translatedText = json.contents.translated;
-        outputText.innerText = translatedText;
+        outputText.innerText = translatedText; // output
     })
     .catch(errorHandling);
 }

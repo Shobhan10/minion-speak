@@ -4,7 +4,7 @@ const outputText = document.querySelector('#output');
 
 
 const url = "https://api.funtranslations.com/translate/minion.json"
-// const url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+
 
 function fetchTranlationApi(text) {
     return url + '?' + 'text=' + text

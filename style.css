@@ -60,9 +60,8 @@ textarea{
     font-size: 1.5rem;
     padding: 1rem;
     width: 100%;
-    height: 30vh;
-    position: absolute;    
-    margin: auto;
+    position: fixed;
+    bottom: 0;
 }
 
 #footer p{
